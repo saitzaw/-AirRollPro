@@ -1,6 +1,14 @@
 # AirRollPro
 project for batch and streaming pipeline 
-- Apache Airflow for batch process
-- Apache Kafka with Kafdrop for straming process
-- Db2 for Online data warehouse
-- Cognos for data visulization
+
+# Build the project 
+docker-compose build
+
+# Run the project 
+docker-compose up -d 
+docker-compose --profile flower up -d
+
+# permission 
+sudo chmod +w dags/
+sudo chown -R $USER:$USER dags/
+### Note: $USER is current login user, please change the name  
