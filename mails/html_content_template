@@ -1,0 +1,7 @@
+Try {{try_number}} out of {{max_tries + 1}}<br>
+Exception:{{exception_html}}<br>
+Job Name :{{ti.task.id}} <br>
+Task ID : {{ti.task_id}} <br> 
+Log: <a href="{{ti.log_url}}">Link</a><br>
+Host: {{ti.hostname}}<br>
+Log file: {{ti.log_filepath}}<br>
